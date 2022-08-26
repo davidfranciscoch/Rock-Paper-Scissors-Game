@@ -1,0 +1,89 @@
+/* * Font Styling */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@600&family=Roboto&display=swap');
+
+/* * CSS Custom Variables */
+:root {
+    --primary-color: #2c3639;
+    --secondary-color: #3f4e4f;
+    --font-color: #dcd7c9;
+    --text-align: center;
+    --border: #a27b5c;
+}
+
+/* * Start CSS Code */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+
+/* ? Heading Section */
+.heading {
+    width: 100%;
+    height: fit-content;
+    border: 5px solid var(--border);
+    text-align: var(--text-align);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.head-content {
+    font-variant: small-caps;
+    font-size: 50px;
+}
+/* ! End */
+
+/* ? Result Section */
+.result {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: var(--text-align);
+}
+
+#player {
+    color: blue;
+}
+
+#computer {
+    color: orange;
+}
+
+.result-content {
+    line-height: 150px;
+    color: red;
+}
+/* ! End */
+
+/* ? Button Section */
+.btn {
+    text-align: var(--text-align);
+}
+
+button {
+    margin: 0 20px;
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    background-color: var(--border);
+    border: none;
+    cursor: pointer;
+}
+
+#rock,
+#paper,
+#scissor {
+    box-shadow: 0 0 2px var(--font-color);
+}
+
+#rock:active,
+#paper:active,
+#scissor:active {
+    box-shadow: 3px 3px 2px var(--font-color);
+    transition: ease 0.1s;
+}
+/* ! End */
